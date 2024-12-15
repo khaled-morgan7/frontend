@@ -1,0 +1,107 @@
+.admin-dashboard {
+  padding: 20px;
+}
+
+.admin-tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  background: white;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.admin-tabs button {
+  background: none;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  color: var(--text-color);
+  border-radius: 4px;
+}
+
+.admin-tabs button.active {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.admin-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.add-ticket-form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.tickets-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.ticket-card {
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 4px;
+  position: relative;
+}
+
+.delete-btn {
+  background-color: var(--error-color);
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.users-table, .bookings-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.users-table th, .users-table td,
+.bookings-table th, .bookings-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.users-table th, .bookings-table th {
+  background-color: #f8f9fa;
+  font-weight: 600;
+}
+
+.feedback-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.feedback-card {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 4px;
+  position: relative;
+}
+
+.feedback-message {
+  margin-bottom: 10px;
+  font-size: 0.9em;
+}
+
+.feedback-user {
+  color: #666;
+  font-size: 0.8em;
+}
